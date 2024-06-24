@@ -1,0 +1,225 @@
+/* Color theme: https://www.color-hex.com/color-palette/1023283 */
+:root {
+    --light-pink: #faf3f3;
+    --medium-pink: #f9a7d1;
+    --light-blue: #e3f2fd;
+    --pastel-blue: #90caf9;
+    --pastel-green: #a5d6a7;
+    --pastel-peach: #ffccbc;
+    --pastel-yellow: #ffeb3b;
+    --soft-white: #ffffff;
+    --light-gray: #f5f5f5;
+    --medium-gray: #555555;
+    --dark-gray: #333333;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: var(--dark-gray);
+    margin: 0;
+    padding: 0;
+    background-color: var(--pastel-peach);
+}
+
+/*Overriding bootstrap margin bottom 1rem for vertical aligning title with nav link items */
+dl, ol, ul {
+    margin-bottom: 0rem;
+}
+
+/* Footer Styling */
+footer {
+    background-color: var(--pastel-blue);
+    color: var(--dark-gray);
+    padding: 1rem;
+    box-shadow:1px 0.5px 6px rgba(0, 0, 0, 0.5);
+
+}
+
+footer p {
+    text-align: center;
+    margin: 0;
+}
+
+/* Content Stylings */
+h2 {
+    color: var(--medium-grey);
+    margin-bottom: 2rem;
+}
+
+h2 a {
+    text-decoration: none;
+    color: var(--pastel-blue);
+}
+
+h2 a:hover {
+    color: var(--pastel-green);
+}
+
+/* Main Content Styling */
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 2rem auto;
+    max-width: 1200px;
+}
+
+nav a {
+    color: var(--dark-gray);
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: var(--light-gray);
+}
+
+p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+    text-align: justify;
+}
+
+.about-container {
+}
+
+
+.active {
+    color: var(--medium-gray);
+}
+
+.contact-container {
+    width: 60%;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+/* Container Styling */
+.container {
+    width: 80%;
+    background-color: var(--soft-white);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 5px;
+    display: block;
+}
+
+.index-container {
+    max-width: 400px;
+}
+
+.index-container {
+
+}
+
+/* List Item Stylings */
+.index-container ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.list-group-item {
+    margin-bottom: 0.5rem;
+}
+
+.list-group-item a {
+    text-decoration: none;
+    color: var(--dark-gray);
+}
+
+.list-group-item a:hover {
+    color: var(--pastel-green);
+    font-weight: bolder;
+}
+
+.myprojects-container ul {
+    text-align: center;
+}
+
+/* Container Stylings */
+.nav-container {
+    width: 100%;
+    margin: 0rem;
+    margin-bottom: 0rem;
+    border-radius: 0px;
+    background-color: var(--pastel-blue);
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+    box-shadow:1px 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Navigation Links Margin override */
+.nav-links {
+    margin: 0rem;
+
+}
+
+/* Navigation Links Stylings */
+.nav-links li {
+    display: inline-block;
+    margin-right: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    text-shadow: 1px 1px 4px rgba(255, 255, 255, 0.3); /* Softer shadow */
+
+}
+
+.nav-links li:last-child {
+    margin-right: 0;
+}
+
+/*. .project-container {}*/
+
+.project-container ol, ul {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+/*scratch project styling*/
+.scratch-project {
+    max-width: 100%;
+    max-height: 100%;
+    width: 485px;
+    height: 402px;
+    border: 0;
+    overflow: hidden;
+}
+
+.scratch-project[allowfullscreen] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}    
+
+/* Title Styling */
+.title {
+    font-size: 2rem;
+    color: var(--medium-gray);
+    text-shadow: 2px 2px 6px rgba(255, 255, 255, 0.5); /* Softer shadow */
+    margin: 0;
+    letter-spacing: 0.01em; /* Adjust letter spacing */
+    text-align: center;
+    vertical-align: middle;
+    transition: all 0.3 ease;
+}
+
+.title a {
+    text-decoration: none;
+    color: var(--dark-gray);
+}

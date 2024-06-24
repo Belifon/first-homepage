@@ -1,0 +1,208 @@
+/* Color theme: https://www.color-hex.com/color-palette/1023283 */
+:root {
+    --light-pink: #ffeef2;
+    --dark-pink: #f9a7d1;
+    --light-blue: #a6dcef;
+    --dark-gray: #333;
+}
+
+
+
+/* Body Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: var(--dark-gray);
+    margin: 0;
+    padding: 0;
+    background-color: var(--light-pink);
+}
+
+
+/* Main Content Styling */
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 2rem auto;
+    max-width: 1200px;
+}
+
+
+/* Container Styling */
+.container {
+    width: 80%;
+    background-color: white;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 5px;
+    display: block;
+}
+
+
+/* Container Stylings */
+.nav-container {
+    width: 100%;
+    margin: 0rem;
+    border-radius: 0px;
+    background-color: var(--dark-pink);
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+}
+
+/* Navigation Links Stylings */
+.nav-links li {
+    display: inline-block;
+    margin-right: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.nav-links li:last-child {
+    margin-right: 0;
+}
+
+nav a {
+    color: var(--dark-gray);
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: white;
+}
+
+.active {
+    color: var(--light-pink);
+}
+
+
+/*Overriding bootstrap margin bottom 1rem for vertical aligning title with nav link items */
+dl, ol, ul {
+    margin-bottom: 0rem;
+    }
+
+.index-container {
+    max-width: 400px;
+}
+
+.contact-container {
+    width: 60%;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+
+
+
+/*.about-container {}
+
+.myprojects-container {}
+
+.project-container {}*/
+
+.project-container ol {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+/* Title Styling */
+.title {
+    font-size: 2rem;
+    color: white;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5); /* Softer shadow */
+    margin: 0;
+    letter-spacing: 0.01em; /* Adjust letter spacing */
+    text-align: center;
+    vertical-align: middle;
+    transition: all 0.3 ease;
+
+}
+
+.title a {
+    text-decoration: none;
+    color: white;
+}
+
+
+/* Content Stylings */
+h2 {
+    color: var(--dark-pink);
+}
+
+h2 a {
+    text-decoration: none;
+    color: var(--dark-pink);
+}
+
+h2 a:hover {
+    color: var(--dark-pink);
+}
+
+p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+/* List Item Stylings */
+.index-container ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.list-group-item {
+    margin-bottom: 0.5rem;
+}
+
+.list-group-item a {
+    text-decoration: none;
+    color: var(--dark-gray);
+}
+
+.list-group-item a:hover {
+    color: var(--light-blue);
+}
+
+
+/*scratch project styling*/
+.scratch-project {
+    max-width: 100%;
+    max-height: 100%;
+    width: 485px;
+    height: 402px;
+    border: 0;
+    overflow: hidden;
+}
+
+.scratch-project[allowfullscreen] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* Footer Styling */
+footer {
+    background-color: var(--dark-pink);
+    color: white;
+    padding: 1rem;
+}
+
+footer p {
+    text-align: center;
+    margin: 0;
+}
